@@ -37,22 +37,17 @@ function FollowingPage({ user, userFollowStats, following, errorLoading }) {
       <Header user={user} />
       <main
         style={{
-          height: "calc(100vh - 4.5rem)",
+          marginTop:"2rem",
+          height:"38rem",
           overflowY: "auto",
           display: "flex",
         }}
       >
-        <Sidebar user={user} topDist={"0"} maxWidth={"250px"} />
         <div
           style={{ fontFamily: "Inter" }}
           className="mx-auto h-full w-full flex-1 max-w-md md:max-w-xl lg:max-w-[61.5rem] xl:max-w-[67rem] bg-white p-4 shadow-lg rounded-lg overflow-y-auto"
         >
-          <div className="flex items-center ml-2">
-            <Title>Following ·</Title>
-            <FollowingNumber className="text-gray-500 ml-2">
-              {followingArrayState.length}
-            </FollowingNumber>
-          </div>
+
           <GridContainer className="grid-cols-1 lg:grid-cols-2">
             {followingArrayState.map((fol) => {
               const isLoggedInUserFollowing =

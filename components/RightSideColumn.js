@@ -65,7 +65,7 @@ function RightSideColumn({ user, chatsData, userFollowStats }) {
             <div key={fol.user._id}>
               {fol.user._id !== user._id && (
                 <div
-                  style={{ border: ".5px solid lightgrey" }}
+                  style={{ border: ".5px solid lightgrey", background:"white",}}
                   key={fol.user._id}
                   className="flex justify-between items-center p-4 mb-4 rounded-lg"
                 >
@@ -142,7 +142,7 @@ function RightSideColumn({ user, chatsData, userFollowStats }) {
         {chatsData ? (
           chatsData.map((chat) => (
             <ChatDiv
-              className="hover:bg-gray-200"
+              className="bg-white"
               key={chat.textsWith}
               onClick={() => router.push(`/chats?chat=${chat.textsWith}`)}
             >

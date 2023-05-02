@@ -19,6 +19,8 @@ function Sidebar({ user, topDist, maxWidth }) {
           : `p-2 max-w-[600px] xl:min-w-[300px] sticky xl:ml-6`
       }
       style={{
+        background:"white",
+        marginTop:"2rem",
         alignSelf: "flex-start",
         top: topDist ? `${topDist}` : "4.5rem",
         fontFamily: "Inter",
@@ -29,22 +31,6 @@ function Sidebar({ user, topDist, maxWidth }) {
         title={user.name}
         route={`/${user.username}`}
       />
-      <SidebarRow
-        Icon={UsersIcon}
-        title="Following"
-        route={`/user/${user._id}/following`}
-      />
-      <SidebarRow
-        Icon={UserGroupIcon}
-        title="Followers"
-        route={`/user/${user._id}/followers`}
-      />
-      <SidebarRow
-        Icon={BellIcon}
-        title="Notifications"
-        route={"/notifications"}
-      />
-      <SidebarRow Icon={ChatIcon} title="Messenger" route={"/chats"} />
     </div>
   );
 }

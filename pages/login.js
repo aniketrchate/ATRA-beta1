@@ -106,7 +106,6 @@ function Login() {
           <Button disabled={submitDisabled} onClick={handleSubmit}>
             {loading ? <ThreeBounce size={9} color="#fff" /> : "Log In"}
           </Button>
-          <SmallButton>Forgotten Password?</SmallButton>
           <span
             style={{
               height: "1.5px",
@@ -116,7 +115,7 @@ function Login() {
           ></span>
 
           <BottomText>
-            New to FaShare?{" "}
+            New to ATRA?{" "}
             <Link href="/signup" passHref>
               <BottomAnchor>Create an account.</BottomAnchor>
             </Link>
@@ -144,13 +143,8 @@ const LoginBox = styled.div`
   margin-top: 1.2rem;
   background: white;
   border-radius: 20px;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
-
-  min-width: 24rem;
-`;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  min-width: 24rem`;
 
 const Button = styled.button`
   transition: all 0.4s;
@@ -183,7 +177,7 @@ const SmallButton = styled.p`
 `;
 
 const BottomText = styled.p`
-  color: #b19cd9;
+  color: #00000;
   font-size: 1.1rem;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -192,10 +186,11 @@ const BottomText = styled.p`
 `;
 
 const BottomAnchor = styled.a`
-  color: #ff8af2;
+  color: ##9C27B0;
+  font-weight: bold;
   :hover {
     cursor: pointer;
-    color: #ff8af2;
+    color: ##9C27B0;
     text-decoration: underline;
   }
 `;

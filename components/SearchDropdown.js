@@ -69,10 +69,10 @@ function SearchDropdown({ setShowSearchDropdown }) {
       ref={ref}
       style={{
         position: "absolute",
-        top: "0rem",
-        left: "0rem",
+        top: "4.4rem",
+        left: "1rem",
         minHeight: "6rem",
-        width: "17.9rem",
+        width: "21.9rem",
         backgroundColor: "white",
         zIndex: "100",
         padding: "0.5rem",
@@ -81,17 +81,18 @@ function SearchDropdown({ setShowSearchDropdown }) {
         fontFamily: "Inter",
       }}
     >
+      
       <div className="flex items-center">
         <ArrowDiv onClick={() => setShowSearchDropdown(false)}>
           <ArrowLeftIcon className="h-5" />
         </ArrowDiv>
         <div className="flex mr-2 ml-1 items-center rounded-full bg-gray-100 p-1 h-12 flex-grow">
           {/* <SearchIcon className="h-5 text-gray-600" /> */}
-          <input
+          <input 
             autoFocus={true}
             className="ml-1 bg-transparent outline-none placeholder-gray-500 w-full font-thin"
             type="text"
-            placeholder="Search users"
+            placeholder=" Search users"
             value={searchTerm}
             onChange={handleChange}
           />

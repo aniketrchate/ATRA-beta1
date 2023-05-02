@@ -68,12 +68,6 @@ function Header({ user }) {
           className="flex ml-3 items-center rounded-full bg-gray-100 p-2  h-12"
         >
           <SearchIcon className="h-5 text-gray-600 px-1.5 lg:px-0 cursor-pointer" />
-          <input
-            className="ml-2 bg-transparent outline-none placeholder-gray-500 font-thin hidden lg:flex md:items-center flex-shrink"
-            style={{ width: "7.5rem" }}
-            type="text"
-            placeholder="Search users"
-          />
         </div>
       </div>
       {searchDropdown && (
