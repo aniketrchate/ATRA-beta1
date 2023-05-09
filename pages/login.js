@@ -59,7 +59,35 @@ function Login() {
 
   return (
     <>
-      <Container>
+    <div className="left" 
+                style={{
+                  padding: "2.5rem",
+                  display: "flex",
+                  align: "center",
+                  width:"100vh",
+                  height: "100vh",
+                  float: "left",
+                }}
+    >
+    <div                 
+    style={{
+      padding: "2.5rem",
+      display: "flex",
+      align: "center",
+      height: "25rem",
+      width:"25rem",
+      float: "center",              
+       backgroundImage: 'url("https://i.ibb.co/whs7vSG/atra.png")',
+       backgroundSize: "contain",
+       backgroundRepeat: "no-repeat",
+    }}>
+    </div>
+    </div>
+
+
+
+    
+      <Container className="right">
         <h1
           style={{
             fontSize: "2.8rem",
@@ -128,12 +156,14 @@ function Login() {
 
 export default Login;
 
+
 const Container = styled.div`
-  padding-top: 2.5rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  float: right;
   background-color: whitesmoke;
 `;
 
