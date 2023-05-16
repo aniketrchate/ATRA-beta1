@@ -60,19 +60,19 @@ function Login() {
 
   return (
     <>
-   <div style={{backgroundColor:"#dad8ed"}}>
+   <div style={{backgroundColor:"#9595d3"}}>
     <div className="left" 
                 style={{
                   padding: "2.5rem",
                   display: "flex",
                   align: "center",
-                  width:"95vh",
+                  width:"110vh",
                   height: "100vh",
                   float: "left",
                 }}
     >
    
-     <img src="./images/atra1.jpg" alt=".."/>
+     <img src="./images/atra2.jpg" alt=".."/>
    
     </div>
 
