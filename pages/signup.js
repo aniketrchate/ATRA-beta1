@@ -30,6 +30,21 @@ function Signup() {
 
   return (
     <>
+    <div style={{backgroundColor:"#9595d3"}}>
+    <div className="right" 
+                style={{
+                  padding: "2.5rem",
+                  display: "flex",
+                  align: "center",
+                  width:"110vh",
+                  height: "100vh",
+                  float: "right",
+                }}
+    >
+   
+     <img src="./images/atra2.jpg" alt=".."/>
+   
+    </div>
       <Container>
         <div className={animationClass}>
           {currentPage.index === 0 && (
@@ -88,6 +103,7 @@ function Signup() {
           )}
         </IconContainer>
       </Container>
+    </div>
     </>
   );
 }
@@ -101,5 +117,11 @@ const IconContainer = styled.div`
 `;
 
 const Container = styled.div`
-  background-color: whitesmoke;
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 100vh;
+border-radius: 0 4rem 4rem 0;
+background-color:white;
+
 `;
